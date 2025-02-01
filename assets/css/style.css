@@ -37,6 +37,11 @@ nav {
     margin: 1%;
 }
 
+#iconBurger {
+    display: none;
+    fill: rgb(255, 231, 170);
+}
+
 #navLogoBox>p {
     font-size: xx-large;
     font-weight: bold;
@@ -77,6 +82,7 @@ nav {
 }
 
 #arrow {
+    display: block;
     position: relative;
     width: 5%;
     fill: rgb(255, 231, 170);
@@ -109,7 +115,7 @@ nav {
 
 .yellow-body-box>img {
     position: relative;
-    bottom: 15vh;
+    bottom: 10vh;
     width: 35vw;
     object-fit: cover;
     flex: 2;
@@ -215,8 +221,8 @@ nav {
 }
 
 /* Medias Queries */
-/* Tablettes & mobile */
-@media (max-width: 1023px) {
+/* Mobile */
+@media (max-width: 767px) {
 
     /*HEADER*/
     #navLogoBox {
@@ -229,12 +235,21 @@ nav {
         display: none;
     }
 
+    #iconBurger {
+        display: block;
+        width: 10%;
+    }
+
     /*MAIN*/
     .head-box {
         width: 90%;
         margin: auto;
         padding: 30% 2% 13% 2%;
         font-size: medium;
+    }
+
+    #arrow {
+        display: none;
     }
 
     .yellow-body-box {
@@ -252,7 +267,7 @@ nav {
 
     .yellow-body-box>img {
         margin: auto;
-        bottom: 8vh;
+        bottom: 5vh;
         width: 80vw;
         object-fit: cover;
     }
@@ -281,6 +296,107 @@ nav {
     .whiteFooter {
         width: 90%;
         margin: auto;
+        margin-bottom: 5%;
+    }
+
+    .white-footer-box {
+        flex-direction: column;
+    }
+
+    .foot-item-box {
+        flex-basis: 100%;
+    }
+
+    .foot-item-box>p {
+        font-size: medium;
+    }
+
+    .footer-box {
+        width: 90%;
+        margin: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+}
+
+/* Tablette */
+@media (min-width: 768px) and (max-width: 1025px) {
+
+    /*HEADER*/
+    #navLogoBox {
+        margin: auto;
+        width: 100%;
+    }
+
+    #navCenterBox,
+    #navRightBox {
+        display: none;
+    }
+
+    #iconBurger {
+        display: block;
+        width: 7%;
+    }
+
+    /*MAIN*/
+    .head-box {
+        width: 90%;
+        margin: auto;
+        padding: 13% 2% 13% 2%;
+        font-size: medium;
+    }
+
+    #arrow {
+        display: none;
+    }
+
+    .yellow-body-box {
+        width: 90%;
+        margin: auto;
+        padding: 0% 2% 0% 2%;
+        flex-direction: column;
+    }
+
+    .yellow-body-text {
+        margin: auto;
+        width: 90%;
+        font-size: medium;
+    }
+
+    .yellow-body-box>img {
+        margin: auto;
+        bottom: 5vh;
+        width: 80vw;
+        object-fit: cover;
+    }
+
+    .blue-body-box {
+        width: 90%;
+        margin: auto;
+        padding: 5% 0% 5% 0%;
+    }
+
+    .border {
+        margin-bottom: 5%;
+    }
+
+    .border>h3 {
+        width: 90%;
+        margin: auto auto 2% auto;
+    }
+
+    .border>p {
+        width: 90%;
+        margin: auto;
+    }
+
+    /*FOOTER*/
+    .whiteFooter {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 5%;
     }
 
     .white-footer-box {
